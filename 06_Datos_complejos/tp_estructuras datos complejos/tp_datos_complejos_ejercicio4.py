@@ -12,3 +12,13 @@ for i in range(1, 6):
     contactos.update({nombre:telefono})
 
 print(contactos)
+
+nom= input("Ingrese el nombre del contacto que busca: ")
+
+for k,v in contactos.items():
+    if nom == k:
+        print(f"El contacto de {k} es:", v)
+        break
+    
+       
+ 
